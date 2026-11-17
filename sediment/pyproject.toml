@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sediment-memory"
+version = "0.1.0"
+description = "Infinite memory for AI agents: memories settle into layers instead of overflowing. Pure stdlib."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["ai", "agents", "memory", "llm", "rag", "sqlite"]
+dependencies = []
+
+[project.scripts]
+sediment = "sediment.cli:main"
+
+[tool.setuptools]
+packages = ["sediment"]
